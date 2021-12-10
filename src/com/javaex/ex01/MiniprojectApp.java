@@ -34,7 +34,7 @@ public class MiniprojectApp {
 			Person p = new Person(sArray[0], sArray[1], sArray[2]);
 			pList.add(p);
 		}
-		
+		br.close();
 		System.out.println("********************************");
 		System.out.println("*       전화번호 관리 프로그램       *");
 		System.out.println("********************************");
@@ -52,11 +52,10 @@ public class MiniprojectApp {
 					int s = r+1;
 					System.out.println(s+".\t"+pList.get(r).getName()+"\t"+pList.get(r).getHp()+"\t"+pList.get(r).getCompany());
 				}
-				//배열만 띄우기
 				break;
 			case 2 :
 				System.out.println("<2.등록>");
-				String snull = sc.nextLine();//개행문자 제거
+				sc.nextLine();//개행문자 제거
 				System.out.print(">이름:");
 				String putname = sc.nextLine();
 				System.out.print(">휴대전화:");
@@ -84,15 +83,18 @@ public class MiniprojectApp {
 				}
 				break;
 			case 3 :
-				System.out.println("3.삭제");
-				
+				System.out.println("<3.삭제>");
+				System.out.print(">번호:");
+				int	numput = sc.nextInt();
+				pList.remove(--numput);
+				System.out.println("[삭제되었습니다.]");
 				break;
 			case 4 :
 				System.out.println("<4.검색>");
 				break;
 			case 5 :
 				System.out.println("********************************");
-				System.out.println("*            감사합니다           *");
+				System.out.println("*           감사합니다           *");
 				System.out.println("********************************");
 				i++;
 				break;
