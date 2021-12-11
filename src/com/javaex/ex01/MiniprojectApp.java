@@ -91,6 +91,11 @@ public class MiniprojectApp {
 				break;
 			case 4 :
 				System.out.println("<4.검색>");
+				sc.nextLine();//개행문자 제거
+				System.out.print(">이름:");
+				String putfindname = sc.nextLine();
+				//Arrays.sList(pList).indexOf(putfindname);
+				
 				break;
 			case 5 :
 				System.out.println("********************************");
