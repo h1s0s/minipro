@@ -35,6 +35,5 @@ public class Person {
 	public void setCompany(String company) {
 		this.company = company;
 	}
-	
 	//메소드 일반
 }

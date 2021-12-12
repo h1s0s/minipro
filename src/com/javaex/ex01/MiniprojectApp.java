@@ -50,8 +50,8 @@ public class MiniprojectApp {
 			case 1 :
 				System.out.println("<1.리스트>");
 				for(int r=0; r<pList.size(); r++) {
-					int s = r+1;
-					System.out.println(s+".\t"+pList.get(r).getName()+"\t"+pList.get(r).getHp()+"\t"+pList.get(r).getCompany());
+					int count = r+1;//리스트 번호, 클래스 필드에 올리기?
+					System.out.println(count+".\t"+pList.get(r).getName()+"\t"+pList.get(r).getHp()+"\t"+pList.get(r).getCompany());
 				}
 				break;
 			case 2 :
