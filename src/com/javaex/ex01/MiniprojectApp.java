@@ -94,9 +94,9 @@ public class MiniprojectApp {
 				System.out.println("<4.검색>");
 				sc.nextLine();//개행문자 제거
 				System.out.print(">이름:");
-				//String putfindname = sc.nextLine();
-				//int findindex = Arrays.asList(pList).indexOf(putfindname);
-				//System.out.println(pList.get(findindex).getName()+","+pList.get(findindex).getHp()+","+pList.get(findindex).getCompany());
+				String putfindname = sc.nextLine();
+				int findindex = pList.indexOf(putfindname);
+				System.out.println(pList.get(findindex).getName()+","+pList.get(findindex).getHp()+","+pList.get(findindex).getCompany());
 				break;
 			case 5 :
 				System.out.println("********************************");

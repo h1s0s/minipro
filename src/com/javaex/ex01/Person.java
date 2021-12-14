@@ -1,5 +1,7 @@
 package com.javaex.ex01;
 
+import java.util.List;
+
 public class Person {
 	
 	//필드
@@ -36,4 +38,6 @@ public class Person {
 		this.company = company;
 	}
 	//메소드 일반
+
 }
+
