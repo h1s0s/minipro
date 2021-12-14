@@ -38,6 +38,5 @@ public class Person {
 		this.company = company;
 	}
 	//메소드 일반
-
 }
 

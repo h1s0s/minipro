@@ -26,6 +26,7 @@ public class MiniprojectApp {
 		
 		//1. 메모장에 있는거 배열에다가 넣기
 		List<Person> pList = new ArrayList<Person>();
+		
 		while(true) {
 			String str = br.readLine();
 			if(str==null) {
@@ -70,6 +71,7 @@ public class MiniprojectApp {
 				Writer fw = new FileWriter("/Users/hs/JavaStudy/file/minipro/PhoneDB.txt");
 				BufferedWriter bfw = new BufferedWriter(fw);
 
+				
 				//배열에 있는 목록 출력
 				for(int r=0; r<pList.size(); r++) {
 					int s = r+1;
@@ -95,8 +97,18 @@ public class MiniprojectApp {
 				sc.nextLine();//개행문자 제거
 				System.out.print(">이름:");
 				String putfindname = sc.nextLine();
-				int findindex = pList.indexOf(putfindname);
-				System.out.println(pList.get(findindex).getName()+","+pList.get(findindex).getHp()+","+pList.get(findindex).getCompany());
+				boolean action = false;
+				//int findindex = pList.indexOf(putfindname);
+				//System.out.println(findindex);
+				for(int e=0; e<pList.size(); e++) {
+					if(pList.get(e).getName().contains(putfindname)){
+						System.out.println(pList.get(e).getName()+","+pList.get(e).getHp()+","+pList.get(e).getCompany());
+						action = true;
+					}
+				}
+				if(action==false) {
+					System.out.println("검색 결가가 없습니다.");
+				}
 				break;
 			case 5 :
 				System.out.println("********************************");
