@@ -98,8 +98,6 @@ public class MiniprojectApp {
 				System.out.print(">이름:");
 				String putfindname = sc.nextLine();
 				boolean action = false;
-				//int findindex = pList.indexOf(putfindname);
-				//System.out.println(findindex);
 				for(int e=0; e<pList.size(); e++) {
 					if(pList.get(e).getName().contains(putfindname)){
 						System.out.println(pList.get(e).getName()+","+pList.get(e).getHp()+","+pList.get(e).getCompany());
@@ -107,7 +105,7 @@ public class MiniprojectApp {
 					}
 				}
 				if(action==false) {
-					System.out.println("검색 결가가 없습니다.");
+					System.out.println("검색 결과가 없습니다.");
 				}
 				break;
 			case 5 :
